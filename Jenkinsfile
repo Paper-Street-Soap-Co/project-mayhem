@@ -21,19 +21,17 @@ pipeline {
         }
       }
     }
-    stage("update repos") {
+    stage("Update Repos") {
       failFast true
       parallel {
-        stages {
-          stage("docker push") {
-            steps {
-              echo "blah"
-            }
+        stage("docker push") {
+          steps {
+            echo "blah"
           }
-          stage("helm serve") {
-            steps {
-              echo "blah"
-            }
+        }
+        stage("helm serve") {
+          steps {
+            echo "blah"
           }
         }
       }

@@ -1,4 +1,4 @@
 # project-mayhem
 homework assignment
 
-- feature
+- hotfix
